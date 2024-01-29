@@ -1,6 +1,6 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { UsersService } from './users.service';
-import { EMPTY, map, Observable, tap } from 'rxjs';
+import { BehaviorSubject, EMPTY, map, Observable, tap } from 'rxjs';
 import { UserType } from '../../types/user.type';
 
 @Component({
@@ -10,17 +10,28 @@ import { UserType } from '../../types/user.type';
 })
 export class UsersComponent implements OnInit {
   users$: Observable<UserType[]> = EMPTY;
-  constructor(private userService: UsersService) {}
+  subject: BehaviorSubject<string>;
+  observableSubject: Observable<any>;
+
+  constructor(private userService: UsersService) {
+    this.subject = new BehaviorSubject<string>('Initial value');
+    this.observableSubject = this.subject.asObservable();
+  }
   ngOnInit() {
     this.users$ = this.userService.getUsers().pipe(
       tap((users) => console.log('number of users: ', users.length)),
       map((users) => users.filter((user) => user.id % 2 === 0)),
     );
+
+    this.observableSubject.subscribe(userId => {
+      console.log('User ID pushed to the subject:', userId)
+    })
   }
+
+
 
   onUserClicked(user: UserType) {
-    console.log('User clicked: ', user)
+    console.log('User clicked: ', user);
+    this.subject.next(`${user.id}`)
   }
-
-
 }

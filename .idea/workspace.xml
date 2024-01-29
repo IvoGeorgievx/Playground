@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ba5a3554-2d9a-4f5a-9a10-93d242d29c1d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observables/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/observables/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observables/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/observables/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observables/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/observables/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observables/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/observables/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/observables/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/observables/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/observables/src/app/users/users.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/observables/src/app/users/users.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/observables/src/app/users/users/users.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/observables/src/app/users/users/users.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/observables/src/app/users/users/users.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/observables/src/app/users/users/users.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +59,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Programming\Playground\observables\src\app\graphql-test" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Angular" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/observables/package.json" />
@@ -79,7 +87,11 @@
       <updated>1706454389463</updated>
       <workItem from="1706454391737" duration="4508000" />
       <workItem from="1706473503102" duration="403000" />
-      <workItem from="1706524523893" duration="3543000" />
+      <workItem from="1706524523893" duration="5226000" />
+      <workItem from="1706534006334" duration="1766000" />
+      <workItem from="1706537375101" duration="70000" />
+      <workItem from="1706539944133" duration="3457000" />
+      <workItem from="1706553928970" duration="1724000" />
     </task>
     <servers />
   </component>
