@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import { UsersService } from './users.service';
-import { EMPTY, map, Observable } from 'rxjs';
+import { EMPTY, map, Observable, tap } from 'rxjs';
 import { UserType } from '../../types/user.type';
 
 @Component({
@@ -12,8 +12,15 @@ export class UsersComponent implements OnInit {
   users$: Observable<UserType[]> = EMPTY;
   constructor(private userService: UsersService) {}
   ngOnInit() {
-    this.users$ = this.userService
-      .getUsers()
-      .pipe(map((users) => users.filter(user => user.id % 2 === 0)));
+    this.users$ = this.userService.getUsers().pipe(
+      tap((users) => console.log('number of users: ', users.length)),
+      map((users) => users.filter((user) => user.id % 2 === 0)),
+    );
   }
+
+  onUserClicked(user: UserType) {
+    console.log('User clicked: ', user)
+  }
+
+
 }

@@ -1,6 +1,11 @@
-<div *ngFor="let user of users$ | async">
-  <p>{{ user.id }}</p>
-  <p>{{ user.name }}</p>
-  <p>{{ user.username }}</p>
-  <p>{{ user.email }}</p>
-</div>
+<!--<div *ngFor="let user of users$ | async">-->
+<!--  <p>{{ user.id }}</p>-->
+<!--  <p>{{ user.name }}</p>-->
+<!--  <p>{{ user.username }}</p>-->
+<!--  <p>{{ user.email }}</p>-->
+<!--</div>-->
+<app-single-user
+  *ngFor="let user of users$ | async"
+  [user]="user"
+  (userClicked)="onUserClicked($event)"
+></app-single-user>
