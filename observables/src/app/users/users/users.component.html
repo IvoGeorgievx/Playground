@@ -7,6 +7,6 @@
 <app-single-user
   *ngFor="let user of users$ | async"
   [user]="user"
-  (userClicked)="onUserClicked($event)"
+  (userClicked)="onUserClicked(user)"
   (buttonClicked)="onChildButtonClicked()"
 ></app-single-user>

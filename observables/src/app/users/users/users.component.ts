@@ -29,7 +29,7 @@ export class UsersComponent implements OnInit {
   }
 
   onUserClicked(user: UserType) {
-    console.log('User clicked: ', user);
+    console.log('User clicked: ', user.id);
     this.subject.next(`${user.id}`);
   }
 

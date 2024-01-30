@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ba5a3554-2d9a-4f5a-9a10-93d242d29c1d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/observables/src/app/users/single-user/single-user.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/observables/src/app/users/single-user/single-user.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/observables/src/app/users/single-user/single-user.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/observables/src/app/users/single-user/single-user.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/observables/src/app/users/users/users.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/observables/src/app/users/users/users.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/observables/src/app/users/users/users.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/observables/src/app/users/users/users.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +87,7 @@
       <workItem from="1706553928970" duration="2391000" />
       <workItem from="1706560698557" duration="146000" />
       <workItem from="1706565868713" duration="2168000" />
-      <workItem from="1706622833085" duration="1237000" />
+      <workItem from="1706622833085" duration="4868000" />
     </task>
     <servers />
   </component>
