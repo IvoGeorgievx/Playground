@@ -23,15 +23,17 @@ export class UsersComponent implements OnInit {
       map((users) => users.filter((user) => user.id % 2 === 0)),
     );
 
-    this.observableSubject.subscribe(userId => {
-      console.log('User ID pushed to the subject:', userId)
-    })
+    this.observableSubject.subscribe((userId) => {
+      console.log('User ID pushed to the subject:', userId);
+    });
   }
-
-
 
   onUserClicked(user: UserType) {
     console.log('User clicked: ', user);
-    this.subject.next(`${user.id}`)
+    this.subject.next(`${user.id}`);
+  }
+
+  onChildButtonClicked() {
+    console.log('Child button clicked')
   }
 }

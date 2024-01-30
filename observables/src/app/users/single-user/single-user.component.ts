@@ -9,8 +9,13 @@ import { UserType } from '../../types/user.type';
 export class SingleUserComponent {
   @Input() user!: UserType;
   @Output() userClicked = new EventEmitter<UserType>()
+  @Output() buttonClicked = new EventEmitter<void>()
 
   onUserClick() {
     this.userClicked.emit(this.user)
+  }
+
+  emitEvent() {
+    this.buttonClicked.emit()
   }
 }

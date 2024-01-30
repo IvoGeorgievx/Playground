@@ -8,4 +8,5 @@
   *ngFor="let user of users$ | async"
   [user]="user"
   (userClicked)="onUserClicked($event)"
+  (buttonClicked)="onChildButtonClicked()"
 ></app-single-user>
